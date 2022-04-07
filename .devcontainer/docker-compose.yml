@@ -1,0 +1,15 @@
+version: "3.3"
+services:
+  docker-tex-vscode-template:
+    image: korosuke613/ubuntu-texlive-ja-devcontainer
+    container_name: docker-tex-vscode-template
+    volumes:
+      - type: bind
+        source: ../
+        target: /workspace
+      - type: bind
+        source: ./.latexmkrc
+        target: /root/.latexmkrc
+    stdin_open: true
+    tty: true
+    working_dir: /workspace

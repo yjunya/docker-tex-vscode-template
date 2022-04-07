@@ -1,0 +1,32 @@
+\documentclass[uplatex, twocolumn, 10pt]{jsarticle}
+
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{latexsym}
+\usepackage{bmpsize}
+\usepackage{url}
+\usepackage{comment}
+
+
+\begin{document}
+
+\title{\bf{\TeX \space template}}
+\author{田中太郎}
+\date{2000/01/01}
+
+\begin{abstract}
+    \input{document/0_abstract.tex}
+\end{abstract}
+
+\maketitle
+
+\input{document/1_introduction.tex}
+\input{document/2_preliminary.tex}
+\input{document/3_proposed.tex}
+\input{document/4_evaluation.tex}
+\input{document/5_conclusion.tex}
+\input{document/6_relatedwork.tex}
+
+\bibliographystyle{jplain}
+\bibliography{bib/mybib}
+
+\end{document}

@@ -1,0 +1,76 @@
+{
+  "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
+  "latex-workshop.latex.autoBuild.run": "onFileChange",
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk-upLaTeX",
+      "command": "latexmk",
+      "args": [
+        "-f",
+        "-gg",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%"
+      ]
+    },
+    {
+      "name": "latexmk-pLaTeX",
+      "command": "latexmk",
+      "args": [
+        "-f",
+        "-gg",
+        "-pv",
+        "-latex='platex'",
+        "-latexoption='-kanji=utf8 -no-guess-input-env'",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%"
+      ]
+    },
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "upLaTeX",
+      "tools": [
+        "latexmk-upLaTeX"
+      ]
+    },
+    {
+      "name": "pLaTeX",
+      "tools": [
+        "latexmk-pLaTeX"
+      ]
+    },
+  ],
+  "latex-workshop.latex.clean.fileTypes": [
+    "*.aux",
+    "*.bbl",
+    "*.blg",
+    "*.idx",
+    "*.ind",
+    "*.lof",
+    "*.lot",
+    "*.out",
+    "*.toc",
+    "*.acn",
+    "*.acr",
+    "*.alg",
+    "*.glg",
+    "*.glo",
+    "*.gls",
+    "*.ist",
+    "*.fls",
+    "*.dvi",
+    "*.log",
+    "*.fdb_latexmk",
+    "*.synctex.gz",
+    // for Beamer files
+    "_minted*",
+    "*.nav",
+    "*.snm",
+    "*.vrb",
+  ],
+  "latex-workshop.view.pdf.viewer": "tab",
+}

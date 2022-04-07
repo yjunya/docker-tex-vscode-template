@@ -1,0 +1,10 @@
+{
+    "name": "docker-tex-vscode-template",
+    "dockerComposeFile": "docker-compose.yml",
+    "extensions": [
+        "james-yu.latex-workshop"
+    ],
+    "service": "docker-tex-vscode-template",
+    "workspaceFolder": "/workspace",
+    "shutdownAction": "stopCompose"
+}
